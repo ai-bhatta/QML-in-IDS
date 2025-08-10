@@ -1,10 +1,9 @@
-# Quantum Machine Learning (QML) for Intrusion Detection System (IDS)
+# Quantum Machine Learning (QML) for Intrusion Detection (ToN-IoT Dataset)
 
-Preprocessing Pipeline
-This repository contains the **basic preprocessing pipeline** for the Quantum Machine Learning (QML) model aimed at **Intrusion Detection Systems (IDS)**. The preprocessing step is an essential part of the full model pipeline, ensuring that raw IoT network traffic data is cleaned, normalized, and prepared for downstream quantum-based classification tasks.
+This repository contains the **basic preprocessing pipeline** for implementing a Quantum Machine Learning based intrusion detection system using the **ToN-IoT dataset**.  
+The preprocessing stage prepares the dataset for quantum machine learning experiments by handling missing values, encoding categorical variables, balancing classes, scaling features, and splitting the data into training and testing sets.  
 
-> **Note:** Only the **basic preprocessing** notebook is uploaded here.  
-> Further model development and experiments (including Quantum Support Vector Machines, Quantum Random Forests, and Quantum-enhanced Clustering) are currently **under construction** and will be released in a future update.
+> **Note:** Only the **basic preprocessing file** is uploaded here. Further model development, including the full QSVM training and advanced quantum-classical hybrid implementations, is **currently under construction** and will be released in future updates.
 
 ---
 
@@ -16,31 +15,21 @@ This repository contains the **basic preprocessing pipeline** for the Quantum Ma
   - Encodes categorical variables
   - Normalizes numerical features
   - Saves the cleaned dataset for use in training quantum-based models
-
+    
 ---
 
 ## 📊 Dataset
 
-The project uses the **Ton-IoT** dataset for IoT network intrusion detection research.
+The **ToN-IoT dataset** is used in this project. It can be downloaded from the official source:  
+🔗 [ToN-IoT Dataset Download](https://research.unsw.edu.au/projects/toniot-datasets)
 
-You can download the dataset from:  
-🔗 [Ton-IoT Dataset – UNSW Canberra](https://research.unsw.edu.au/projects/toniot-datasets)
-
----
-
-## 🚀 Future Work
-
-The full repository (to be uploaded soon) will include:
-- **Quantum Support Vector Machine (QSVM)** for classification
-- **Quantum Random Forest (QRF)** for decision-based detection
-- **Quantum-enhanced K-Means clustering** for unsupervised anomaly detection
-- Comparative analysis of quantum vs classical approaches
+The dataset contains network traffic data from IoT environments, making it suitable for evaluating intrusion detection models.
 
 ---
 
-## 🛠 Requirements
+## 🛠 Installation
 
-To run the preprocessing pipeline, install the following dependencies:
+To install the dependencies required for running the preprocessing and QSVM scripts, you can use the following command:
 
 ```bash
-pip install pandas numpy scikit-learn
+pip install -r requirements.txt
