@@ -27,6 +27,26 @@ The dataset contains network traffic data from IoT environments, making it suita
 
 ---
 
+## ⚙️ Preprocessing Steps Implemented
+
+- **Data Loading** — Reads CSV files from ToN-IoT dataset.  
+- **Handling Missing Values** — Cleans the dataset.  
+- **Label Encoding** — Converts categorical labels into numerical format.  
+- **Standardization** — Scales features to zero mean and unit variance.  
+- **Class Balancing** — Uses SMOTE for oversampling minority classes.  
+- **Dimensionality Reduction** — Applies PCA *(optional)*.  
+- **Train-Test Split** — Prepares data for machine learning and quantum machine learning models.  
+
+---
+
+## 📈 Future Work
+
+- To implement complete **Quantum Support Vector Machine (QSVM)** classification pipeline.  
+- To explore **Quantum Neural Networks (QNNs)** for intrusion detection.  
+- To perform **comparative analysis** between classical and quantum models.  
+
+---
+
 ## 🛠 Installation
 
 To install the dependencies required for running the preprocessing and QSVM scripts, you can use the following command:
